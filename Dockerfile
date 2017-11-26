@@ -4,7 +4,7 @@ SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPref
 
 RUN Install-PackageProvider -Name chocolatey -RequiredVersion 2.8.5.130 -Force; `
     Install-Package -Name microsoft-build-tools -RequiredVersion 15.0.26320.2 -Force; `
-    Install-Package -Name netfx-4.6.2-devpack -RequiredVersion 4.6.01590.20170129 -Force; `
+    Install-Package -Name netfx-4.6.1-devpack -RequiredVersion 4.6.01055.00 -Force; `
     Install-Package nuget.commandline -RequiredVersion 3.5.0 -Force;
 
 ENV NUGET_PATH="C:\Chocolatey\lib\NuGet.CommandLine.3.5.0\tools" `
